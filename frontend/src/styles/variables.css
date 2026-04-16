@@ -1,0 +1,134 @@
+:root {
+  /* ─── Color Palette ─── */
+  --primary: #7C6EF0;
+  --primary-light: #A594FF;
+  --primary-dark: #5B4CC7;
+  --secondary: #FF8A65;
+  --secondary-light: #FFB393;
+  --accent: #FFD54F;
+  --accent-glow: #FFF176;
+
+  /* Semantic */
+  --success: #66BB6A;
+  --warning: #FFA726;
+  --danger: #EF5350;
+  --info: #42A5F5;
+
+  /* Mood Colors */
+  --mood-1: #EF5350;
+  --mood-2: #FFA726;
+  --mood-3: #FFEE58;
+  --mood-4: #66BB6A;
+  --mood-5: #42A5F5;
+
+  /* Backgrounds */
+  --bg-primary: #0F0E1A;
+  --bg-secondary: #1A1830;
+  --bg-card: #242240;
+  --bg-card-hover: #2E2B50;
+  --bg-glass: rgba(36, 34, 64, 0.7);
+  --bg-input: #1E1C35;
+
+  /* Text */
+  --text-primary: #F0EFF5;
+  --text-secondary: #A8A5C0;
+  --text-muted: #6E6B8A;
+  --text-inverse: #0F0E1A;
+
+  /* Borders */
+  --border: rgba(124, 110, 240, 0.2);
+  --border-hover: rgba(124, 110, 240, 0.5);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #7C6EF0 0%, #FF8A65 100%);
+  --gradient-hero: linear-gradient(135deg, #0F0E1A 0%, #1A1830 40%, #2A1845 100%);
+  --gradient-card: linear-gradient(145deg, rgba(124, 110, 240, 0.1) 0%, rgba(255, 138, 101, 0.05) 100%);
+  --gradient-warm: linear-gradient(135deg, #FF8A65 0%, #FFD54F 100%);
+  --gradient-calm: linear-gradient(135deg, #42A5F5 0%, #7C6EF0 100%);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px rgba(124, 110, 240, 0.3);
+  --shadow-warm: 0 0 20px rgba(255, 138, 101, 0.3);
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 50%;
+
+  /* Typography */
+  --font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 2rem;
+  --font-4xl: 2.5rem;
+  --font-5xl: 3.5rem;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Layout */
+  --max-width: 1200px;
+  --navbar-height: 64px;
+}
+
+/* ─── Animations ─── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(124, 110, 240, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(124, 110, 240, 0.6); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes breathe-in {
+  0% { transform: scale(0.6); opacity: 0.5; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.6); opacity: 0.5; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
